@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mina eCommerce</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+
+  }
+}
+/* image text */
+.image{
+  position: relative;
+  width: 100%;
+  
+}
+.text {
+position: absolute;
+font-size: 60px;
+top: 35%;
+left: 50%;
+font-weight: 550;
+color: white;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.first-txt{
+position: absolute;
+font-size: 20px;
+top: 45%;
+left: 50%;
+font-weight: 400;
+color: white;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.top-btn {
+position: absolute;
+border: 2px solid black;
+top: 55%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color:white;
+color: gray;
+font-size: 16px;
+padding: 14px 40px;
+border: none;
+cursor:pointer;
+text-align: center;
+}
+.image2 {
+  position: relative;
+  width: 100%;
+  
+}
+.text2 {
+position: absolute;
+font-size: 70px;
+top: 240%;
+left: 50%;
+font-weight: 550;
+color: white;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+.first-txt2{
+position: absolute;
+font-size: 20px;
+top: 250%;
+left: 50%;
+font-weight: 400;
+color: white;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+.top-btn2 {
+position: absolute;
+border: 2px solid black;
+top: 260%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color:white;
+color: gray;
+font-size: 16px;
+padding: 14px 40px;
+border: none;
+cursor:pointer;
+text-align: center;
+}
+
+      /* purple btn */
+.purple {
+    border-color: rgb(81, 4, 81);
+    color: rgb(81, 4, 81);
+    padding: 12px 50px;
+    background-color: white;
+  }
+  
+  .purple:hover {
+    background: rgb(81, 4, 81);
+    color: white;
+  }
+  .end-btn .purple {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    color: gray;
+    font-size: 16px;
+    padding: 20px 80px;
+    cursor:pointer;
+    text-align: center;
+    }
+   /* Lern more */
+.lern {
+    border-color: rgb(81, 4, 81);
+    color: rgb(81, 4, 81);
+    padding: 12px 50px;
+    background-color: white;
+ 
+  }
+  
+  .lern:hover {
+    background: rgb(81, 4, 81);
+    color: white;
+  }
+
+  .bottom-btn .lern {
+    position: absolute;
+       top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    color: gray;
+    font-size: 16px;
+    padding: 14px 60px;
+    cursor:pointer;
+    text-align: center;
+    }
+    .image3 {
+  position: relative;
+  width: 100%;
+  
+}
+.main-text {
+      position: absolute;
+      font-size: 60px;
+      top: 430%;
+      left: 50%;
+      font-weight: 500;
+      color: white;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      }
+    .form-control-lg {
+    position: absolute;
+    top: 440%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 14px 100px;
+    border: none;
+    cursor:pointer;
+    text-align:left;
+    opacity: 0.5;
+    }
+    .top-btn3 {
+position: absolute;
+border: 2px solid black;
+top: 450%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color:white;
+color: gray;
+font-size: 16px;
+padding: 14px 50px;
+border: none;
+cursor:pointer;
+text-align: center;
+}
+
+
+      /* link color change */
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  a:visited {
+color: black;
+background-color: transparent;
+text-decoration: underlin;
+}
+ 
+  a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+color: black;
+background-color: transparent;
+text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .text {
+    font-size: 35px;
+  }
+  .text2{
+    font-size: 40px;
+    top: 650%;
+  }
+  .first-txt2{
+    font-size: 10;
+    top: 660%;
+  }
+  .top-btn2{
+    top: 670%;
+  
+  }
+  .main-text{
+    font-size: 30px;
+    top: 900%;
+  }
+  .form-control-lg{
+    top: 910%;
+    font-size: 12px;
+    padding: 10px 50px;
+  }
+  .top-btn3{
+    top: 920%;
+  }
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 20px;
+    top: 20%;
+  }
+  .first-txt{
+    font-size: 10px;
+    top: 25%;
+  }
+  .top-btn{
+    top: 30%;
+    padding: 2px 6px;
+  }
+  .text2{
+    font-size: 20px;
+    top: 390%;
+  }
+  .first-txt2{
+    font-size: 10px;
+    top: 395%;
+  }
+  .top-btn2{
+    top: 400%;
+    padding: 2px 6px;
+  }
+  .main-text{
+    font-size: 20px;
+    top: 560%;
+  }
+  .form-control-lg{
+    top: 567%;
+    font-size: 8px;
+    padding: 10px 50px;
+  }
+  .top-btn3{
+    top: 573%;
+    padding: 2px 6px;
+  }
+}
+/*Footer*/
+  .footer{
+        
+    background-color: rgb(246, 240, 240);
+    padding-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    margin-bottom: 10%;
+      }
+
+.foot1 a img{
+  margin: 20px 20px;
+  }
+.foot1 h2{
+  padding-top: 15px;
+  margin-left: 20px;
+}
+.foot2 ul li{
+  list-style-type: none;
+  float: left;
+  margin-right: 20px;
+}
+.foot2 ul li a{
+  color: black;
+  font-size: 20px;
+}
+.foot2{
+  margin-left: 200px;
+}
+.foot2 p{
+  padding: 60px 0px;
+  padding-left: 230px;
+}
+
+
+</style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="topnav" id="myTopnav">
+      <img src="MINA.avif" alt="Mina logo" class="img" width="70" height="15" style="margin-top: 2%; margin-left: 5%;">
+
+      <a href="#" style="margin-right: 20px;"> <img src="shopping-bag.webp" alt="cart bag" class="image"
+          style="width: 25px; height: 25px;">Cart (0)</a>
+      <a href="#contact">Contact</a>
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+        <span class="caret"></span></a>
+      <a href="#"> Shop</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <div class="row  ">
+      <div class="col-lg-12 col-md-12  col-12 p-3   ">
+        <img src="Rectangle.webp" alt="Image" class="image" style="width: 100%; height:auto">
+        <div class="text">Handmade ceramics</div>
+        <div class="first-txt">Painted clay ceramics made with love.</div>
+        <button class="top-btn">Shop now</button>
+      </div>
+    </div>
+
+    <div class="row" text-center>
+      <div class="col-lg-12 col-md-12 col-12 p-5 mt-3  text-center" style="width:100%; height: 300%;">
+        <h1 style="color:rgb(81, 4, 81)"> Our bestsellers</h1>
+      </div>
+    </div>
+
+    <div class="row mt-3 mb-3 p-3">
+      <div class="col-lg-3 col-md-12 col-12 p-3 text-center">
+        <img src="1.avif" alt="'Candy' Flowerpot" class="image">
+        <h3 style="color: rgb(81, 4, 81);">'Candy' Flowerpot </h3>
+        <h4 style="color: rgb(81, 4, 81);">$59.99 </h4>
+      </div>
+      <div class="col-lg-3 col-md-12 col-12 p-3 text-center ">
+        <img src="2.webp" alt="Image" class="image">
+        <h3 style="color: rgb(text-cente81, 4, 81);">'Drop' Vase </h3>
+        <h4 style="color: rgb(81, 4, 81);">$49.99 </h4>
+      </div>
+      <div class="col-lg-3 col-md-12 col-12 p-3 text-center ">
+        <img src="3.avif" alt="Image" class="image">
+        <h3 style="color: rgb(81, 4, 81);">'Wave' Vase </h3>
+        <h4 style="color: rgb(81, 4, 81);">$69.99 </h4>
+      </div>
+      <div class="col-lg-3 col-md-12 col-12 p-3   text-center">
+        <img src="4.webp" alt="Image" class="image">
+        <h3 style="color: rgb(81, 4, 81);">'Sun' Vaset </h3>
+        <h4 style="color: rgb(81, 4, 81);">$49.99 </h4>
+      </div>
+      <br>
+
+    </div class="row mt-3 mb-3 p-3">
+    <div class="col-lg-12 col-md-12 col-12 p-3 " style="margin-left: 43%; margin-bottom: 5%;">
+      <button class=" end-btn purple">Buy now</button>
+    </div>
+  </div>
+
+  <div class="row  ">
+    <div class="col-lg-12 col-md-12 col-12 p-3   ">
+      <img src="AzGRJwMK6BHxZypJ.webp" alt="Image" class="image2 " style="width: 100%; height:auto">
+      <div class="text2">Home decor items</div>
+      <div class="first-txt2">Find your new favorite pieces</div>
+      <button class="top-btn2">Shop now</button>
+    </div>
+  </div>
+
+  <div class="row mt-3 mb-3 p-3">
+    <div class="col-lg-6 col-md-12 col-12 p-3 ">
+      <img src="about.avif" alt="About Mina" class="image" style="width: 100%; height: auto;">
+      <h1 style="color: rgb(81, 4, 81);">About Mina </h1>
+      <h4 style="color: rgb(81, 4, 81);">Mina is a brand born out of a passion for ceramics. </h4>
+      <button class="bottom-btn lern">learn more</button>
+    </div>
+    <div class="col-lg-6 col-md-12 col-12 p-3 ">
+      <img src="sust.avif" alt="About Mina" class="image" style="width: 100%; height: auto;">
+      <h1 style="color: rgb(81, 4, 81);">Sustainability </h1>
+      <h4 style="color: rgb(81, 4, 81);">Mina is an eco-friendly brand that cares about sustainability. </h4>
+      <button class="bottom-btn lern">learn more</button>
+    </div>
+  </div>
+
+
+  <div class="row  ">
+    <div class="col-lg-12 col-md-12 col-12 p-3   ">
+      <img src="Frame.avif" alt="Image" class="image3" style="width: 100%; height:auto">
+      <div class="main-text">Sign-up for our newsletter</div>
+
+      <div> <input type="email" class="form-control-lg text-body" id="email" placeholder="Your email address"
+          name="email"></div>
+      <button class="top-btn3">Submit</button>
+    </div>
+  </div>
+
+  <div class="row" text-center>
+    <div class="col-lg-12 col-md-12 col-12 p-5 mt-3   h1 text-center">
+      <h1 style="color:rgb(81, 4, 81)" style="font-size: 800%;"> Follow us on Instagram</h1>
+    </div>
+  </div>
+
+  <div class="row mt-3 mb-3 p-3">
+    <div class="col-lg-4 col-md-12 col-12 p-3 ">
+      <img src="a.avif" alt="About Mina" class="image">
+    </div>
+    <div class="col-lg-4 col-md-12 col-12 p-3 ">
+      <img src="b.avif" alt="About Mina" class="image">
+    </div>
+    <div class="col-lg-4 col-md-12 col-12 p-3 ">
+      <img src="c.webp" alt="About Mina" class="image">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 p-3 mt-3  h3 text-center" style="margin-bottom: 10%;">
+      <u style="color:rgb(81, 4, 81)"> @mina_studio</u>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row " style="margin-top: -5%;">
+        <div class="col-lg-6 col-md-6 ">
+          <div class="foot1">
+            <h2><img src="MINA1.avif" alt="Mina logo" class="img" width="70" height="20"></h2>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 ">
+          <div class="foot2">
+            <ul>
+              <li><a href="#">Payment & Delivery</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 2%;">
+        <div class="col-lg-6 col-md-6 ">
+          <div class="logo">
+            <a href="#"><img src="twitter logo.png" alt="twitter" style="width: 5%; height: 5%; margin-left: 2%;"></a>
+            <a href="#"><img src="facebook logo.png" alt="fb" style="width: 5%; height: 5%; margin-left: 2%;"></a>
+            <a href="#"><img src="instagram logo.png" alt="insta" style="width: 5%; height: 5%; margin-left: 2;"></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 ">
+          <div class="foot3">
+            <p style="margin-left: 68%;">Powered by Zyro.com</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+
+  </footer>
+
+</body>
+
+</html>
